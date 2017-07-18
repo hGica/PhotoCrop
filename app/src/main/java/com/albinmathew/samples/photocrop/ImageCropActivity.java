@@ -132,12 +132,12 @@ public class ImageCropActivity extends AppCompatActivity {
         btnCancel = (Button) findViewById(R.id.cancelBtn);
         btnCancel.setOnClickListener(btnCancelListener);
 
-        mImageView.addListener(new PhotoViewAttacher.IGetImageBounds() {
-            @Override
-            public Rect getImageBounds() {
-                return new Rect((int) Edge.LEFT.getCoordinate(), (int) Edge.TOP.getCoordinate(), (int) Edge.RIGHT.getCoordinate(), (int) Edge.BOTTOM.getCoordinate());
-            }
-        });
+//        mImageView.addListener(new PhotoViewAttacher.IGetImageBounds() {
+//            @Override
+//            public Rect getImageBounds() {
+//                return new Rect((int) Edge.LEFT.getCoordinate(), (int) Edge.TOP.getCoordinate(), (int) Edge.RIGHT.getCoordinate(), (int) Edge.BOTTOM.getCoordinate());
+//            }
+//        });
         if (Build.VERSION.SDK_INT >= 23) {
             if (ContextCompat.checkSelfPermission(this,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE)

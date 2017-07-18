@@ -40,7 +40,7 @@ import com.albinmathew.photocrop.photoview.PhotoViewAttacher;
  *
  *  Modified/stripped down Code from cropper library : https://github.com/edmodo/cropper
  */
-public class CropOverlayView extends View implements PhotoViewAttacher.IGetImageBounds {
+public class CropOverlayView extends View {
 
     private float DEFAULT_CORNER_RADIUS = 6;
     private boolean DEFAULT_GUIDELINES = false;
@@ -134,7 +134,6 @@ public class CropOverlayView extends View implements PhotoViewAttacher.IGetImage
         }
     }
 
-    @Override
     public Rect getImageBounds() {
         return new Rect((int) Edge.LEFT.getCoordinate(), (int) Edge.TOP.getCoordinate(), (int) Edge.RIGHT.getCoordinate(), (int) Edge.BOTTOM.getCoordinate());
     }

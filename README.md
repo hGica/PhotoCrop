@@ -14,7 +14,7 @@ Users can get both circularly cropped and rectangular cropped images.Cropping wi
 In your app build.gradle add
 
 ```
-	compile 'com.albinmathew:photo-crop-library:1.0.3'
+	compile 'com.github.hGica:PhotoCrop:1.0.4'
 ```
 
 
